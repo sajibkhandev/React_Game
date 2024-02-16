@@ -63,7 +63,7 @@ export default function App() {
   }
   return (
     <>
-    <div className='bg-black py-[130px] h-screen'>
+    <div className='bg-black py-16 md:py-[130px] h-screen'>
       <div className='bg-[#FF00FF] mx-auto max-w-[700px] p-[50px]'>
       <h1 className='text-white text-center font-bold text-5xl pb-12'>{heading}</h1>
     {!button&&<h2 className='text-white text-center font-bold text-3xl pb-6'>Chance: {count}</h2>}
@@ -71,8 +71,8 @@ export default function App() {
     
     {
       button?
-      <input className='mx-auto block w-[350px] py-[2px] px[10px] text-[30px] text-center outline-0' type="password" onChange={hendleInput1} value={input1} />:
-      <input className='mx-auto block w-[350px] py-[2px] px[10px] text-[30px] text-center outline-0' type="text" onChange={hendleInput2} value={input2} />
+      <input className='mx-auto block w-[250px] md:w-[350px] py-[2px] px[10px] md:text-[30px] text-center outline-0' type="password" onChange={hendleInput1} value={input1} />:
+      <input className='mx-auto block w-[250px] md:w-[350px] py-[2px] px[10px] md:text-[30px] text-center outline-0' type="text" onChange={hendleInput2} value={input2} />
     }
    <div className='text-center py-[30px]'>
    {
