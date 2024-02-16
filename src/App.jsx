@@ -64,10 +64,10 @@ export default function App() {
   return (
     <>
     <div className='bg-black py-28 md:py-[130px] h-screen'>
-      <div className='bg-[#FF00FF] mx-7 mx-auto max-w-[700px] p-[20px] md:p-[50px]'>
-      <h1 className='text-white text-center font-bold text-3xl md:text-5xl pb-4 md:pb-12'>{heading}</h1>
-    {!button&&<h2 className='text-white text-center font-bold text-3xl pb-6'>Chance: {count}</h2>}
-    <h2 className='text-white text-center font-semibold text-2xl pb-4'>{error}</h2>
+      <div className='bg-[#FF00FF] mx-7 md:mx-auto md:max-w-[700px] px-5 md:p-[50px]'>
+      <h1 className='text-white text-center font-bold text-2xl md:text-5xl pt-5 pb-4 md:pb-12'>{heading}</h1>
+    {!button&&<h2 className='text-white text-center font-bold text-xl md:text-3xl md:pb-6'>Chance: {count}</h2>}
+    <h2 className='text-white text-center font-semibold text-xl md:text-2xl pb-4'>{error}</h2>
     
     {
       button?
