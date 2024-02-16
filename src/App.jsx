@@ -65,7 +65,7 @@ export default function App() {
     <>
     <div className='bg-black py-16 md:py-[130px] h-screen'>
       <div className='bg-[#FF00FF] mx-auto max-w-[700px] p-[50px]'>
-      <h1 className='text-white text-center font-bold text-5xl pb-12'>{heading}</h1>
+      <h1 className='text-white text-center font-bold text-3xl md:text-5xl pb-6 md:pb-12'>{heading}</h1>
     {!button&&<h2 className='text-white text-center font-bold text-3xl pb-6'>Chance: {count}</h2>}
     <h2 className='text-white text-center font-semibold text-2xl pb-4'>{error}</h2>
     
@@ -77,8 +77,8 @@ export default function App() {
    <div className='text-center py-[30px]'>
    {
       hide&&(button?
-    <button className='py-[10px] px-[30px] bg-black text-white  font-bold text-xl inline-block' onClick={hendleStart}>Start</button>:
-    <button className='py-[10px] px-[30px] bg-black text-white  font-bold text-xl inline-block' onClick={hendleCheck}>Check</button>)
+    <button className='py-2 px-6 md:py-[10px] md:px-[30px] bg-black text-white  font-bold text-base md:text-xl inline-block' onClick={hendleStart}>Start</button>:
+    <button className='py-2 px-6 md:py-[10px] md:px-[30px] bg-black text-white  font-bold text-base md:text-xl inline-block' onClick={hendleCheck}>Check</button>)
     }
    </div>
       </div>
